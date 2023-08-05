@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refill Inventory</title>
+</head>
+<body>
+    <h1>Refill Stock</h1>
+    <h2>Product Details</h2>
+    <table>
+        <tr>
+            <th>Product ID</th>
+            <th>Product name</th>
+            <th>Product Price</th>
+            <th>Product Quantity</th>
+        </tr>
+        <tr>
+            <td>{{product.product_id}}</td>
+            <td>{{product.product_name}}</td>
+            <td>{{product.product_price}}</td>
+            <td>{{product.inventory_count}}</td>
+        </tr>
+    </table>
+    <h2>Refill Here</h2>
+    <form action="/admin/refill/{{product.product_id}}" method="post">
+        <label for="quantity">Quantity Added</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="100" value="1">
+        <input type="submit" value="Refill">
+    </form>
+</body>
+</html>
