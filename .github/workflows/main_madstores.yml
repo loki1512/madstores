@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'MADStores'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8524A686F5B240219F9C28B2FF8CBAAF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E8A45F520EFC4920956BEBDA5286C953 }}
